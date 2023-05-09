@@ -1,11 +1,11 @@
-About river-ingester
-====================
+About river-ingester-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/river-ingester-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pbotros/river
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/river-ingester-feedstock/blob/main/LICENSE.txt)
 
 Summary: High-throughput, structured, and persistent streaming
 
@@ -44,10 +44,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_arrow_cpp8.0.1</td>
+              <td>linux_64_arrow_cpp12.0.0</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=18402&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_arrow_cpp8.0.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_arrow_cpp12.0.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -72,10 +72,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_arrow_cpp8.0.1</td>
+              <td>osx_64_arrow_cpp12.0.0</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=18402&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_arrow_cpp8.0.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_arrow_cpp12.0.0" alt="variant">
                 </a>
               </td>
             </tr><tr>

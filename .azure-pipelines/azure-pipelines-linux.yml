@@ -16,8 +16,8 @@ jobs:
         CONFIG: linux_64_arrow_cpp11.0.0
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_arrow_cpp8.0.1:
-        CONFIG: linux_64_arrow_cpp8.0.1
+      linux_64_arrow_cpp12.0.0:
+        CONFIG: linux_64_arrow_cpp12.0.0
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_arrow_cpp9.0.0:
