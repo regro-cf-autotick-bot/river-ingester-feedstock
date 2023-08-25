@@ -10,7 +10,7 @@ source:
   sha256: 783c871593ec5bb7905ebaab3ca6ec4b664cba21e29dc0809b169a4124894521
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("river-ingester", max_pin="x.x") }}
   # The ingester currently doesn't build on Windows, though admittedly not
