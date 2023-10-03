@@ -10,7 +10,7 @@ source:
   sha256: 6d479643e3a87d52c429f02a43b8665e202685570c87cee5037e9c2741b514b4
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("river-ingester", max_pin="x.x") }}
   # The ingester currently doesn't build on Windows, though admittedly not
@@ -26,13 +26,12 @@ requirements:
     - ninja  # [win]
     - pkg-config
   host:
-    - boost-cpp
+    - libboost-devel
     - arrow-cpp
     - glog
     - river-cpp {{ version }}
   run:
     - gflags
-    - boost-cpp
     - river-cpp {{ version }}
     - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.13") }}  # [osx and x86_64]
 
