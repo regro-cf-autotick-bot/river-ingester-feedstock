@@ -27,7 +27,8 @@ requirements:
     - pkg-config
   host:
     - libboost-devel
-    - arrow-cpp
+    - libarrow
+    - libparquet
     - spdlog
     - river-cpp {{ version }}
   run:
