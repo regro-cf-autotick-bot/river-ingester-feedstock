@@ -1,6 +1,11 @@
 {% set name = "river-ingester" %}
 {% set version = "1.0.11" %}
 
+# appease linter
+{% if libarrow is undefined %}
+{% set libarrow = "15" %}
+{% endif %}
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -10,7 +15,7 @@ source:
   sha256: 222145f7e9ce1cdc8857ae03753b922cfe68168f4972597e0e8161fbad14350e
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("river-ingester", max_pin="x.x") }}
   # The ingester currently doesn't build on Windows, though admittedly not
@@ -28,7 +33,9 @@ requirements:
   host:
     - libboost-devel
     - libarrow
+    {% if libarrow.split(".")[0] | int >= 14 %}
     - libparquet
+    {% endif %}
     - spdlog
     - river-cpp {{ version }}
   run:
