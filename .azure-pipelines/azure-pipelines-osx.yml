@@ -8,17 +8,17 @@ jobs:
     vmImage: macOS-11
   strategy:
     matrix:
-      osx_64_arrow_cpp11.0.0:
-        CONFIG: osx_64_arrow_cpp11.0.0
+      osx_64_libarrow12:
+        CONFIG: osx_64_libarrow12
         UPLOAD_PACKAGES: 'True'
-      osx_64_arrow_cpp12:
-        CONFIG: osx_64_arrow_cpp12
+      osx_64_libarrow13:
+        CONFIG: osx_64_libarrow13
         UPLOAD_PACKAGES: 'True'
-      osx_64_arrow_cpp13:
-        CONFIG: osx_64_arrow_cpp13
+      osx_64_libarrow14:
+        CONFIG: osx_64_libarrow14
         UPLOAD_PACKAGES: 'True'
-      osx_64_arrow_cpp14:
-        CONFIG: osx_64_arrow_cpp14
+      osx_64_libarrow15:
+        CONFIG: osx_64_libarrow15
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 

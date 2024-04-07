@@ -30,59 +30,59 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_arrow_cpp11.0.0</td>
+              <td>linux_64_libarrow12</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=18402&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_arrow_cpp11.0.0" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_libarrow12" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_arrow_cpp12</td>
+              <td>linux_64_libarrow13</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=18402&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_arrow_cpp12" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_libarrow13" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_arrow_cpp13</td>
+              <td>linux_64_libarrow14</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=18402&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_arrow_cpp13" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_libarrow14" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_arrow_cpp14</td>
+              <td>linux_64_libarrow15</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=18402&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_arrow_cpp14" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_libarrow15" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_arrow_cpp11.0.0</td>
+              <td>osx_64_libarrow12</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=18402&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_arrow_cpp11.0.0" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow12" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_arrow_cpp12</td>
+              <td>osx_64_libarrow13</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=18402&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_arrow_cpp12" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow13" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_arrow_cpp13</td>
+              <td>osx_64_libarrow14</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=18402&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_arrow_cpp13" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow14" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_arrow_cpp14</td>
+              <td>osx_64_libarrow15</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=18402&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_arrow_cpp14" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow15" alt="variant">
                 </a>
               </td>
             </tr>
