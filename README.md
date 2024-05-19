@@ -51,10 +51,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_libarrow16</td>
+              <td>linux_64_libarrow16.1</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=18402&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_libarrow16" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_libarrow16.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -79,10 +79,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_libarrow16</td>
+              <td>osx_64_libarrow16.1</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=18402&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow16" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/river-ingester-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_libarrow16.1" alt="variant">
                 </a>
               </td>
             </tr>
