@@ -36,9 +36,7 @@ requirements:
   host:
     - libboost-devel
     - libarrow
-    {% if libarrow.split(".")[0] | int >= 14 %}
     - libparquet
-    {% endif %}
     - spdlog
     - river-cpp {{ version }}
   run:
