@@ -1,0 +1,68 @@
+From b3854bf465ab1e614232aeee07e3524560e9179b Mon Sep 17 00:00:00 2001
+From: "H. Vetinari" <h.vetinari@gmx.com>
+Date: Wed, 30 Oct 2024 10:17:25 +1100
+Subject: [PATCH] disambiguate `make_unique` use `std::` version, as `<memory>`
+ already included
+
+---
+ cpp/ingester/src/ingester.cpp          | 12 ++++++------
+ cpp/ingester/src/ingester_threadpool.h |  2 +-
+ 2 files changed, 7 insertions(+), 7 deletions(-)
+
+diff --git a/cpp/ingester/src/ingester.cpp b/cpp/ingester/src/ingester.cpp
+index 594a41f..93d2efe 100644
+--- a/cpp/ingester/src/ingester.cpp
++++ b/cpp/ingester/src/ingester.cpp
+@@ -52,7 +52,7 @@ StreamIngester::StreamIngester(const RedisConnection &connection,
+     this->_redis = internal::Redis::Create(connection);
+ 
+     auto func = boost::bind(&StreamIngester::ingest_single, this, boost::placeholders::_1);
+-    _pool = make_unique<IngesterThreadPool<string, StreamIngestionResult>>(4, func);
++    _pool = std::make_unique<IngesterThreadPool<string, StreamIngestionResult>>(4, func);
+ }
+ 
+ void StreamIngester::Ingest() {
+@@ -176,7 +176,7 @@ SingleStreamIngester::SingleStreamIngester(const RedisConnection &connection,
+     this->reader = std::make_unique<StreamReader>(connection);
+     this->reader->Initialize(stream_name);
+     auto local_schema = reader->schema();
+-    this->schema = make_unique<StreamSchema>(local_schema);
++    this->schema = std::make_unique<StreamSchema>(local_schema);
+ 
+     parent_directory = boost::filesystem::path(output_directory) / boost::filesystem::path(stream_name);
+     // Create the directory if necessary
+@@ -439,8 +439,8 @@ void SingleStreamIngester::delete_up_to(const string& last_key_persisted) {
+         ~SeekListener() = default;
+     };
+ 
+-    unique_ptr<StreamReader> seek_reader = make_unique<StreamReader>(_connection);
+-    auto listener = make_unique<SeekListener>();
++    unique_ptr<StreamReader> seek_reader = std::make_unique<StreamReader>(_connection);
++    auto listener = std::make_unique<SeekListener>();
+     seek_reader->AddListener(listener.get());
+     seek_reader->Initialize(stream_name_);
+     int64_t seek_ret = seek_reader->Seek(last_key_persisted);
+@@ -501,8 +501,8 @@ void SingleStreamIngester::add_eof_if_necessary() {
+         ~TailListener() = default;
+     };
+ 
+-    unique_ptr<StreamReader> tail_reader = make_unique<StreamReader>(_connection);
+-    auto listener = make_unique<TailListener>();
++    unique_ptr<StreamReader> tail_reader = std::make_unique<StreamReader>(_connection);
++    auto listener = std::make_unique<TailListener>();
+     tail_reader->AddListener(listener.get());
+     tail_reader->Initialize(stream_name_);
+     const int bufsize = tail_reader->schema().sample_size();
+diff --git a/cpp/ingester/src/ingester_threadpool.h b/cpp/ingester/src/ingester_threadpool.h
+index 95be5ca..034182a 100644
+--- a/cpp/ingester/src/ingester_threadpool.h
++++ b/cpp/ingester/src/ingester_threadpool.h
+@@ -138,7 +138,7 @@ private:
+ #ifdef _MSC_VER
+             spdlog::info("[Stream {}] Exception while executing task: {}", stream_name, e.what());
+ #else
+-            std:stringstream ss;
++            std::stringstream ss;
+             ss << boost::stacktrace::stacktrace();
+             spdlog::info("[Stream {}] Exception while executing task: {}\nStacktrace: {}",
+                          stream_name, e.what(), ss.str());

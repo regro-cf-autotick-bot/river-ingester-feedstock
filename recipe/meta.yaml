@@ -13,6 +13,8 @@ package:
 source:
   url: https://github.com/pbotros/river/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 04f6712d220a97fde76e3ed5998832c4a7ba790137cf656f8c2d1290077b8eaf
+  patches:
+    - patches/0001-disambiguate-make_unique-use-std-version-as-memory-a.patch
 
 build:
   number: 4
