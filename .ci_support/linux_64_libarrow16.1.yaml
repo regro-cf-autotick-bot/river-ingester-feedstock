@@ -17,7 +17,7 @@ docker_image:
 libarrow:
 - '16.1'
 libboost_devel:
-- '1.84'
+- '1.86'
 spdlog:
 - '1.13'
 target_platform:
