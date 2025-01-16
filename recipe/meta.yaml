@@ -17,7 +17,7 @@ source:
     - patches/0001-disambiguate-make_unique-use-std-version-as-memory-a.patch
 
 build:
-  number: 5
+  number: 6
   run_exports:
     - {{ pin_subpackage("river-ingester", max_pin="x.x") }}
   # The ingester currently doesn't build on Windows, though admittedly not
